@@ -41,6 +41,7 @@ The Rectangle class should have the following methods...
 
 Instantiate 2 rectangles with different lengths and widths.
 For each rectangle you instatiated, print the following messages:
+
 **The area of the Rectangle is \____**.
 
 **The perimeter of the Rectangle is \____**.
