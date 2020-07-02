@@ -65,9 +65,6 @@ The Triangle class should have the following methods...
 * **`area`** - This method returns the area of the Triangle.
 > Hint: A triangle has three sides represented by `a`, `b` and `c`, as well as a semi-perimeter, represented by `s`. `s = (a + b + c)/2` and Area is equal to the square root of `s * (s - a) * (s - b) * (s - c)`.
 
-* **`isObtuse`** - This method returns **`true`** if the triangle is obtuse, otherwise returns **`false`**.
-
-
 Instantiate 3 Triangles. each one with different values from each other.
 For each rectangle you instatiated, print the following messages:
 
