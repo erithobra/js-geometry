@@ -80,8 +80,20 @@ Define a `Shape` class. It should have the number of sides and a color associate
 
 #### :wink: commit
 
-## Bonus 
+## Bonus - BlackJack
 
-Feel free to fork and clone and work your way through the following repo: 
+ Define a Card class with the following properties:
+ 
+- suit (hearts, spades, clubs, diamonds)
+- rank (Ace, 2, 3, 4, .. Jack, King, Queen)
+- score (1, 2, 3, 4, ... 11, 12, 13)
+ 
+ Define a Deck class with the following properties and methods:
+ 
+- length (the number of cards - should start at 52)
+- cards (an array of cards in the deck)
+- draw: return a random card from the cards array
+ 
+When you create an instance of your Deck class (i.e. in your constructor), fill in the cards array with 52 instances of your Card class. You can do this with a nested for loop - first loop through an array of all possible suits, then loop through an array of all possible ranks. Inside your inner loop, create an instance of your Card class and push it into the Deck's cards array.
 
-[Gladiator](https://git.generalassemb.ly/jdr-0622/js-gladiator/blob/master/readme.md)
+Instantiate an instance of your Deck and start drawing random cards!
