@@ -1,8 +1,15 @@
 console.log("script file is linked");
 
+class Shape {
+    constructor(sides, color) {
+        this.sides = sides;
+        this.color = color;
+    }
+}
 
-class Rectangle {
-    constructor(length, width) {
+class Rectangle extends Shape {
+    constructor(sides, color, length, width) {
+        super(sides, color);
         this.length = length;
         this.width = width;
     }
@@ -29,8 +36,9 @@ class Rectangle {
     }
 }
 
-class Triangle {
-    constructor(sideA, sideB, sideC) {
+class Triangle extends Shape {
+    constructor(sides, color, sideA, sideB, sideC) {
+        super(sides, color);
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
@@ -68,17 +76,17 @@ class Triangle {
 
 
 // SQUARES
-const square = new Rectangle(4, 4);
-const rectangle = new Rectangle(2,3);
+const square = new Rectangle(4, "red", 4, 4);
+const rectangle = new Rectangle(4, "orange", 2, 3);
 
 //square.printPrompts();
 //rectangle.printPrompts();
 
 
 // TRIANGLES
-const equilateral = new Triangle(3,3,3);
-const isosceles = new Triangle(3,3,2);
-const triangle = new Triangle(4,5,3);
+const equilateral = new Triangle(3,"yellow",3,3,3);
+const isosceles = new Triangle(3,"green",3,3,2);
+const triangle = new Triangle(3,"blue",4,5,3);
 
 equilateral.printPrompts();
 isosceles.printPrompts();
